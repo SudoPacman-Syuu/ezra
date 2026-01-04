@@ -1,0 +1,32 @@
+{
+  "name": "ezra-js",
+  "version": "1.0.0",
+  "description": "Ezra will fetch all unauthenticated static and dynamic JavaScript from a URL. Ezra will even review the robots.txt disallow list and ensure he checks every JavaScript file in those directories. He will then parse through all of the downloaded files and return a JSON file that identifies requests from the scripts. After that, he will then parse through all the collected JavaScript and pick out spots that may be interesting, based on a wide-ranging regex. The JSON from the filter can then potentially be fed into further machine analysis at your leisure. Alternatively, you could review it manually. All findings will be neatly organized in the /scrapelists/ directory located in the program's directory. Good luck.",
+  "main": "index.js",
+  "bin": {
+    "ezra": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"node test.js",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "John Fraumeni",
+  "license": "ISC",
+  "type": "commonjs",
+  
+  "dependencies": {
+    "acorn": "^8.15.0",
+    "acorn-walk": "^8.3.4",
+    "axios": "^1.13.2",
+    "cheerio": "^1.1.2",
+    "puppeteer": "^24.34.0",
+    "stream-json": "^1.9.1"
+  },
+  
+  "devDependencies": {
+    "eslint": "^9.50.0",
+    "prettier": "^3.0.0"
+  }
+}
